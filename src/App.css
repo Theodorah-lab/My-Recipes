@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Moirai+One&family=Orbitron&family=Ysabeau+SC:wght@300&display=swap");
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe {
+  width: 400px;
+  background-color: white;
+  width: 10rem;
+  opacity: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  width: 30rem; 
+  font-family: "Ysabeau SC", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* margin-top: 15rem ; */
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+  height: 250px;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-family: "Ysabeau SC", sans-serif;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-name {
+  margin: 0;
+}
+
+.button-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-button {
+  position: absolute;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(34,34,34,.5);
+  font-weight: 700;
+  bottom: 0;
+  text-decoration: none;
+}
+
+.recipe-button:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.recipe-description {
+  margin: 0;
+}
+
+.go-back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.recipe-detail {
+  display: flex;
+  justify-content: center;
+  padding-top: 66px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.recipe-detail-container {
+  max-width: 900px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.recipe-detail-image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.recipe-detail-description {
+  color: rgb(13, 13, 13);
+  margin-bottom: 16px;
+}
+
+.recipe-instructions {
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-instructions > :first-child {
+  margin-right: 16px;
+  flex: 1;
+}
+
+.recipe-instructions > :last-child {
+  flex: 2;
+}
+
+.recipe-time {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.recipe-time-item {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.recipe-image-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.divider-line {
+  height: 32px;
+  border: 1px solid rgb(13, 13, 13, 0.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-family: "Ysabeau SC", sans-serif;
+  margin-top: 16px;
+}
+
+.gap {
+  flex: 1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#root {
+  height: 100%;
+}
