@@ -8,7 +8,7 @@ const recipes = [
   {
     id: 1,
     name: "Pasta",
-    description: "Pasta with tomato sauce",
+    description: "Pasta with cheese sauce",
     imageUrl:
       "https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ingredients: [
@@ -67,7 +67,7 @@ const recipes = [
   {
     id: 3,
     name: "Burger",
-    description: "Burger with tomato sauce and cheese  ",
+    description: "Burger with tomato and cheese  ",
     imageUrl:
       "https://sundaysuppermovement.com/wp-content/uploads/2021/10/loaded-burgers-featured.jpg",
     ingredients: [
@@ -153,9 +153,9 @@ const recipes = [
   {
     id: 6,
     name: "Salad",
-    description: "Salad with tomato sauce and cheese",
+    description: "Salad with Avocado and cheese",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGlI-kblEhh_NbljlmxThuSTBBXkWbiNxnd6M7vFCc40C1QpNp6OB268iK0yw5_BkuXZU&usqp=CAU",
+      "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ingredients: [
       "Lettuce",
       "Tomato slices",
@@ -191,13 +191,16 @@ const router = createBrowserRouter([
   },
 ]);
 
+
 function App() {
   return (
     <div className="app">
       <RouterProvider router={router} />
       <div className="gap"></div>
+      <br /> {/* This is a line */}
+      <hr /> {/* This is a horizontal line */}
       <footer className="footer">
-        <h4>@Theo Minni</h4>
+        <h4>Copyright © 2023 Tasty</h4>
       </footer>
     </div>
   );
